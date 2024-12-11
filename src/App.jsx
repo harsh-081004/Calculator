@@ -116,6 +116,7 @@ const App = () => {
         </button>
         </div>
         thank you 
+        byee
         </div>
   );
 };
