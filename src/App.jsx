@@ -39,8 +39,7 @@ const App = () => {
     });
   };
 
-  return (
-    <>
+  return ( 
       <div className="cal">
         <h1>Calculator</h1>
         <form>
@@ -117,7 +116,6 @@ const App = () => {
         </button>
         </div>
         </div>
-    </>
   );
 };
 
