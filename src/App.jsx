@@ -112,9 +112,10 @@ const App = () => {
           .
         </button>
         <button name="result" className="result" onClick={calculate}>
-          =
+       result
         </button>
         </div>
+        thank you
         </div>
   );
 };
