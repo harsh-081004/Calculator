@@ -108,15 +108,13 @@ const App = () => {
         <button name="0" onClick={handleClick}>
           0
         </button>
-        <button name="." onClick={handleClick}>
+        <button name="." onClick={handle}>
           .
         </button>
         <button name="result" className="result" onClick={calculate}>
           =
         </button>
         </div>
-        thank you 
-        byee
         </div>
   );
 };
