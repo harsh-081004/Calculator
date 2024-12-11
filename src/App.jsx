@@ -115,6 +115,7 @@ const App = () => {
        result
         </button>
         </div>
+        thank you
         </div>
   );
 };
