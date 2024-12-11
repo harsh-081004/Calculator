@@ -110,7 +110,7 @@ const App = () => {
           0
         </button>
         <button name="." onClick={handleClick}>
-          .
+          ..
         </button>
         <button name="result" className="result" onClick={calculate}>
           =
