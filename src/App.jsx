@@ -2,115 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const [Result, setResult] = useState("");
-
-  //clear all values
-  const clear = () => {
-    setResult("");
-  };
-
-  //handle number clicks
-  const handleClick = (e) => {
-    const value = e.target.name;
-    setResult((prevResult) => prevResult + value);
-  };
-
-  //handle the actual operation
-  const calculate = () => {
-    try {
-      const result = eval(Result);
-      setResult(result.toString());
-    } catch (error) {
-      setResult("bhul ave che");
-    }
-  };
-
-  //remove last occurence of given one by one
-  const remove = () => {
-    setResult((prevResult) => prevResult.slice(0, -1));
-  };
-  const toggleSign = () => {
-    setResult((prevResult) => {
-      const num = parseFloat(prevResult);
-      return String(num * -1);
-    });
-  };
+ 
 
   return (
     <div className="cal">
       <h1>calc</h1>
-      <form>
-        <input type="text" value={Result} readOnly />
-      </form>
-
-      <button name="Clear" onClick={clear}>
-        Clear
-      </button>
-      <button name="remove" onClick={remove}>
-        Remove
-      </button>
-      <button name="%" onClick={handleClick}>
-        %
-      </button>
-      <button name="/" onClick={handleClick}>
-        /
-      </button>
-      <br />
-
-      <button name="1" onClick={handleClick}>
-        1
-      </button>
-      <button name="2" onClick={handleClick}>
-        2
-      </button>
-      <button name="3" onClick={handleClick}>
-        3
-      </button>
-      <button name="*" onClick={handleClick}>
-        x
-      </button>
-      <br />
-
-      <button name="4" onClick={handleClick}>
-        4
-      </button>
-      <button name="5" onClick={handleClick}>
-        5
-      </button>
-      <button name="6" onClick={handleClick}>
-        6
-      </button>
-      <button name="-" onClick={handleClick}>
-        -
-      </button>
-      <br />
-
-      <button name="7" onClick={handleClick}>
-        7
-      </button>
-      <button name="8" onClick={handleClick}>
-        8
-      </button>
-      <button name="9" onClick={handleClick}>
-        9
-      </button>
-      <button name="+" onClick={handleClick}>
-        +
-      </button>
-      <br />
-
-      <button name="togglesign" onClick={toggleSign}>
-        +/-
-      </button>
-      <button name="0" onClick={handleClick}>
-        0
-      </button>
-      <button name="." onClick={handleClick}>
-        .
-      </button>
-      <button name="result" className="result" onClick={calculate}>
-        =
-      </button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque reiciendis iste voluptas minima alias ipsam fugit assumenda, illo hic tempora quasi veniam! Aliquid doloribus illum autem cum ratione natus quis neque praesentium facilis fugit velit magni consectetur aliquam non exercitationem totam, vel, excepturi necessitatibus veniam hic! Nihil, temporibus labore. Voluptates error inventore, eius ex beatae obcaecati, culpa accusamus vero tempora aut optio, qui architecto dicta! Aliquam fuga aperiam, nesciunt neque illo odit, unde sint facilis rem voluptatibus fugiat repudiandae temporibus debitis ex doloremque error ratione dolorem. Magnam corporis, officia totam dolores quos alias fugiat ipsam ut dolor sint nemo doloribus recusandae, quasi quia? Eius possimus modi culpa hic quos commodi totam. Cupiditate nisi quis sapiente quasi soluta dicta, officiis labore rerum sunt consectetur eius enim, quaerat illum reiciendis nemo libero inventore iure eveniet animi. Ut illo veritatis magnam cumque dolore non, beatae illum! Optio in nostrum doloribus, obcaecati alias hic dolorem esse eos corrupti consequuntur adipisci, quia neque, exercitationem quae minus nesciunt natus impedit omnis placeat. Explicabo error, animi illo qui omnis eum quisquam est magnam quibusdam amet vero maiores! Similique illo soluta hic dolorem cum nesciunt quisquam veniam, odit sed nulla voluptates magnam perferendis enim qui omnis ea assumenda ab quia nisi ut quod fuga! A incidunt enim ipsa pariatur, vero tempora, minima ab nemo quo voluptas ad harum nesciunt autem!</p>
     </div>
   );
 };
